@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Tip Calculator</title>
+  </head>
+  <body class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card card-body mt-5 text-center">
+            <h1 class="heading display-4">Tip Calculator</h1>
+            <p class="pt-3">This is a Calculator that will calculate the tip of your meal or whatever based off of your selected choice.</p>
+            <form  id="tip-form">
+              <div class="form-group">
+                <div class="input-group px-5">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                  </div>
+                  <input type="float"  id="amount" class="form-control"  placeholder="Amount">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="btn-group btn-group-toggle px-5" data-toggle="buttons">
+                  <label class="btn btn-secondary active">
+                    <input type="radio"  id="tip1" autocomplete="off" value=".15" name="tip"> 15%
+                  </label>
+                  <label class="btn btn-secondary">
+                    <input type="radio"  id="tip2" autocomplete="off" value=".20" name="tip"> 20%
+                  </label>
+                  <label class="btn btn-secondary">
+                    <input type="radio"  id="tip3" autocomplete="off" value=".25" name="tip"> 25%
+                  </label>
+                  <label class="btn btn-secondary">
+                    <input type="radio"  id="tip4" autocomplete="off" value="0" name="tip"> n/a
+                  </label>                   
+               </div>
+               <p class="pt-3">for custom tip click 'n/a' and enter custom tip below</p>     
+               <div class="form-group mt-2">
+                <div class="input-group px-5">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                  </div>
+                  <input type="float"  id="custom" class="form-control"  placeholder='Custom Tip'>
+                </div>
+              </div>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="calculate" class="btn btn-info mt-3">
+              </div>
+              <h3 class="text-left ml-5">Results</h3>
+              <div class="form-group">
+                <div class="input-group px-5">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                  </div>
+                  <input type="float"  id="grat" class="form-control"  placeholder="tip" disabled>
+              </div>
+
+              <div class="form-group">
+                <div class="input-group mt-2 px-5">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                  </div>
+                  <input type="float"  id="results" class="form-control"  placeholder="Price after tip" disabled>
+              </div>
+                  
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
